@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    transition: background-color 0.3s ease;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#random {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+    justify-self: center;
+    width: 100%;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5em;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    background-color: #c8c6d3;
+}
